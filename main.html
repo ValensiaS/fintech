@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+      }
+      .nav-bar {
+        background-color: aqua;
+      }
+      html {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Helvetica", "sans-serif";
+      }
+      .navigation-bar {
+        font-family: "Helvetica", "sans-serif";
+        border-bottom: gray;
+        padding: 10px;
+      }
+      .navigationandlogo {
+        font-family: "Helvetica", "sans-serif";
+      }
+      .logo {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-top: 0px;
+      }
+      .navigation-options {
+        font-family: "Helvetica", "sans-serif";
+        padding: 20px;
+
+        float: left;
+      }
+
+      .language {
+        padding-bottom: 0px;
+        float: left;
+      }
+
+      .globus {
+        width: 20px;
+        height: 20px;
+        margin-left: 980px;
+        margin-top: -40px;
+        float: left;
+      }
+      .globeText {
+        margin-left: 1000px;
+        margin-top: -40px;
+        float: left;
+      }
+      .signin {
+        color: #100699;
+        border-color: #100699;
+        border-style: solid;
+        border-radius: 30px;
+        width: 100px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        margin-left: 1100px;
+        margin-top: 0px;
+        padding: 10px;
+      }
+      .mainbody {
+        background-color: #f0f0f0;
+        padding: 0px;
+      }
+      .headline-wrap {
+        padding-top: 10px;
+        text-align: center;
+      }
+      .firstline {
+        font-size: 90px;
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+      .secondline {
+        text-decoration: none;
+        padding-left: 250px;
+        padding-right: 250px;
+      }
+      .start {
+        background-color: rgba(17, 109, 255, 1);
+        color: white;
+        border-style: solid;
+        border-radius: 50px;
+        width: 150px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        margin-left: 550px;
+        height: 30px;
+        font-size: 20px;
+        padding: 10px;
+      }
+      .pic_wrap {
+        margin-bottom: 20px;
+      }
+      .three_pic {
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        padding-top: 30px;
+        z-index: 1;
+        position: relative;
+      }
+      .three_pic_1 {
+        max-width: 250px;
+        max-height: auto;
+        position: absolute;
+        padding-top: 80px;
+        z-index: 0;
+        margin-left: -20px;
+      }
+      .three_pic_2 {
+        max-width: 1009px;
+        max-height: auto;
+        position: relative;
+        margin-left: 60px;
+        z-index: 1;
+      }
+      .three_pic_3 {
+        max-width: 210px;
+        max-height: auto;
+        margin-left: -70px;
+        position: absolute;
+        float: right;
+        padding: 30px;
+        z-index: 0;
+      }
+      .blue {
+        background-color: rgba(11, 48, 128, 1);
+        color: white;
+        width: auto;
+        height: 600px;
+        margin-top: -100px;
+      }
+
+      .textwrap {
+        display: inline-block;
+      }
+
+    </style>
+    <title>fintech</title>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="navigationandlogo">
+        <img
+          class="logo"
+          src="data:image/png;base64,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"
+        />
+        <a class="navigation-options">Features</a>
+        <a class="navigation-options">Explore</a>
+        <a class="navigation-options">Subcriptions</a>
+        <a class="navigation-options">Templates</a>
+        <a class="navigation-options">WIX partners</a>
+        <a class="navigation-options">EditorX</a>
+        <a class="navigation-options">Support</a>
+      </div>
+      <div class="language">
+        <img
+          class="globus"
+          src="https://static.vecteezy.com/system/resources/thumbnails/000/357/012/small/1__288_29.jpg"
+        />
+        <div><p class="globeText">En</p></div>
+      </div>
+
+      <div class="signin">Sign In</div>
+    </div>
+    <div class="mainbody">
+      <div class="headline-wrap">
+        <h1 class="firstline">Create a Website You’re Proud Of</h1>
+        <p class="secondline">
+          Discover the platform that gives you the freedom to create, design,
+          manage and develop your web presence exactly the way you want.
+        </p>
+        <div class="start">Get Started</div>
+      </div>
+      <div class="pic_wrap">
+        <div class="three_pic">
+          <a class="three_pic_1">
+            <img
+              class="three_pic_1"
+              src="https://static.wixstatic.com/media/311dce_f1afd69d052b41f19bf0752deb105ad1~mv2.png/v1/fill/w_381,h_407,al_c,q_85,usm_0.66_1.00_0.01/Group%205.webp"
+            />
+          </a>
+          <a class="three_pic_2">
+            <img
+              class="three_pic_2"
+              src="https://static.wixstatic.com/media/311dce_ac7e2c0b3e8f436abcaade213fcf4d29~mv2.png/v1/fill/w_1514,h_824,al_c,q_90,usm_0.66_1.00_0.01/dasktop.webp"
+          /></a>
+
+          <a class="three_pic_3">
+            <img
+              class="three_pic_3"
+              src="https://static.wixstatic.com/media/311dce_1cef549df779445b81fd703966647273~mv2.png/v1/fill/w_323,h_579,al_c,q_85,usm_0.66_1.00_0.01/mobile%202.webp"
+            />
+          </a>
+        </div>
+    <script>
+         src="ex1.js"
+    </script>
+  </body>
+</html>
